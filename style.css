@@ -634,11 +634,14 @@ height: 400px;
  }
 
  .contries{
-  text-decoration-line: underline;
-  display: flex;
-  gap: 20px;
-  justify-content: space-around;
+ 
+  cursor: pointer;
+ 
+  word-spacing: 20px;
+  
  }
+
+ 
  .flex {
   display: flex;
   justify-content: space-between;
@@ -652,6 +655,16 @@ height: 400px;
  
  .image1 {
   margin-bottom: 10px;
+ }
+
+ @media (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .flex p {
+    align-items: center;
+  }
  }
 
  .footer {
